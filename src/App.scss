@@ -1,4 +1,15 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  color: #121212;
+  line-height: 21px;
+}
+
+.main {
+  width: 100%;
+  max-width: 980px;
+  margin: 20px auto 80px;
+  padding: 0 10px;
 }

@@ -16,7 +16,7 @@ describe('Header tests', () => {
     })
 
     test('It should render a Header', () => {
-        console.log('component: ', component.debug())
+        // console.log('component: ', component.debug())
         const wrapper = findByTestAttr(component, 'headerComponent')
         expect(wrapper.length).toBe(1)
     })
