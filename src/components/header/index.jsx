@@ -4,10 +4,10 @@ import './header.scss'
 
 const Header = props => {
   return (
-      <header>
+      <header data-test='headerComponent'>
         <div className='wrap'>
           <div className='logo'>
-            <img src={Logo} alt='A logo'/>
+            <img src={Logo} alt='A logo' id='logoImg' />
           </div>
         </div>
       </header>
