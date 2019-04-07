@@ -4,7 +4,7 @@ import postReducer from './index'
 describe('Posts Reducer', () => {
     it('should return default state', () => {
         const reducer = postReducer(undefined, {})
-        expect(reducer).toEqual([])
+        expect(reducer).toEqual({posts: []})
     });
 
     it('should return new state', () => {
@@ -13,6 +13,6 @@ describe('Posts Reducer', () => {
             type: types.GET_POSTS,
             payload: posts
         })
-        expect(newState).toEqual(posts)
+        expect(newState.posts).toEqual(posts)
     });
 });
