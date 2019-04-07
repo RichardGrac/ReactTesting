@@ -17,12 +17,14 @@ const tempArr = [{
 export const App = props => {
     const {posts} = props
     return (
-      <div className='App'>
+      <div className='App' data-test='AppComponent'>
         <Header />
         <section className='main'>
           <Headline header={"Posts"} desc={"Click the button to render posts!"} tempArr={tempArr} />
           <Button buttonText={'GET POSTS'} emitEvent={(e) => props.fetchPosts()} />
-            {posts.length > 0 && posts.map((post, i) => <ListItem key={i} title={post.title} desc={post.body} />)}
+            {posts.length > 0 && posts.map((post, i) => (
+                <ListItem key={i} title={post.title} desc={post.body} data-test='ListItemComponent' />
+                ))}
         </section>
       </div>
     )
